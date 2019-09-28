@@ -1,3 +1,7 @@
+html {
+  font-size: 13px;
+}
+
 body {
   background: #0f0a0a;
   color: #fff;
@@ -5,7 +9,7 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .gatsby-image-wrapper {
@@ -16,10 +20,12 @@ p {
 .container {
   height: 100%;
   max-height: 100vh;
-  padding: 25px 30px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 2rem 2rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .container-top {
@@ -36,8 +42,8 @@ p {
 .headline {
   font-family: "Libre Baskerville", serif;
   font-weight: normal;
-  font-size: 32px;
-  margin: 20px 0;
+  font-size: 2.5rem;
+  margin: 2rem 0;
 }
 
 .headline strong {
@@ -45,29 +51,30 @@ p {
 }
 
 .intro {
-  margin: 0px 0 10px 0;
+  margin-bottom: calc(1.45rem / 2);
 }
 
 ul.topics {
   list-style: none;
   margin: 0;
+  font-size: 1rem;
 }
 
 .section-cta {
-  font-weight: bold;
   text-align: center;
 }
 
 .section-cta p {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .section-cta button {
+  font-weight: bold;
   background-color: #fff;
   border-radius: 5px;
   transition: 0.2s;
-  font-size: 20px;
-  padding: 10px 20px;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
 }
 
 .section-cta button:hover {
@@ -77,14 +84,13 @@ ul.topics {
 
 ul.links {
   list-style: none;
-  margin: 20px 0;
+  margin: 1rem 0;
   text-align: center;
 }
 
 ul.links li {
   display: inline-block;
-  margin: 0;
-  margin-right: 20px;
+  margin: 0 2rem 0 0;
 }
 
 ul.links li:last-child {
@@ -94,7 +100,7 @@ ul.links li:last-child {
 ul.links a {
   color: #fff;
   transition: 0.2s;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 ul.links a:hover {
@@ -103,16 +109,79 @@ ul.links a:hover {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .section-cta,
+  ul.links {
+    text-align: left;
+  }
+  .section-content {
+    width: 50%;
+  }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Scaling typography */
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 14px;
+  }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 620px) {
+  html {
+    font-size: 15px;
+  }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 30px;
+  }
+  .container {
+    max-width: 1800px;
+  }
+  .section-content {
+    width: 80%;
+  }
 }
