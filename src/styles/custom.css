@@ -1,21 +1,51 @@
 body {
-  background: red;
-}
-.container {
-  height: 100vh;
-  max-height: 100vh;
-  background-color: black;
+  background: #0f0a0a;
   color: #fff;
   font-family: "Nunito", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+.gatsby-image-wrapper {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.container {
+  height: 100%;
+  max-height: 100vh;
+  padding: 25px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.section-content {
+  width: 80%;
 }
 
 .headline {
   font-family: "Libre Baskerville", serif;
   font-weight: normal;
+  font-size: 32px;
+  margin: 20px 0;
 }
 
 .headline strong {
   font-weight: bold;
+}
+
+.intro {
+  margin: 0px 0 10px 0;
 }
 
 ul.topics {
@@ -23,20 +53,66 @@ ul.topics {
   margin: 0;
 }
 
+.section-cta {
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-cta p {
+  margin-bottom: 5px;
+}
+
+.section-cta button {
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.section-cta button:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
 ul.links {
   list-style: none;
-  margin: 0;
+  margin: 20px 0;
+  text-align: center;
 }
 
 ul.links li {
   display: inline-block;
+  margin: 0;
   margin-right: 20px;
+}
+
+ul.links li:last-child {
+  margin-right: 0;
 }
 
 ul.links a {
   color: #fff;
+  transition: 0.2s;
+  font-size: 14px;
 }
 
-.section-cta {
-  font-weight: bold;
+ul.links a:hover {
+  color: lightgrey;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

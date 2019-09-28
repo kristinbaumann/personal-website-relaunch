@@ -1,48 +1,73 @@
 import React from "react"
 
 // import SEO from "../components/seo"
+// <SEO title="Home" />
 
 import "../styles/layout.css"
 import "typeface-nunito"
 import "typeface-libre-baskerville"
 import "../styles/custom.css"
 
+import BackgroundImage from "../components/background-image"
+
 const IndexPage = () => (
-  <div class="container">
-    {/* <SEO title="Home" /> */}
-    <h1 class="headline">
-      Hi, I'm <strong>Kristin Baumann</strong>.
-    </h1>
-    <div class="section-content">
-      <p>
-        I love to create meaningful things on the web, pragmatically and
-        interdisciplinarly:
-      </p>
-      <ul class="topics">
-        <li>- Frontend Development</li>
-        <li>- Product Management</li>
-        <li>- UX Design</li>
-        <li>- Data Visualisation</li>
+  <BackgroundImage>
+    <div className="container">
+      <div className="container-top">
+        <div className="section-content">
+          <h1 className="headline">
+            Hi, I'm <br></br>
+            <strong>Kristin Baumann</strong>.
+          </h1>
+          <p className="intro">
+            I love to create meaningful things on the web, pragmatically and
+            interdisciplinarly:
+          </p>
+          <ul className="topics">
+            <li>- Frontend Development</li>
+            <li>- Product Management</li>
+            <li>- Data Visualisation</li>
+            <li>- UX Design</li>
+          </ul>
+        </div>
+        <div className="section-cta">
+          <p>Looking for help?</p>
+          <button className="cta" href="mailto:mail@kristin-baumann.com">
+            Get in contact
+          </button>
+        </div>
+      </div>
+      <ul className="section-interaction links">
+        <li>
+          <a
+            href="https://linkedin.com/in/kristinbaumann"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/kristin_baumann"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/kristinbaumann"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </li>
       </ul>
     </div>
-    <div class="section-cta">
-      <p>Looking for help?</p>
-      <button class="cta" href="mailto:test@test.de">
-        Get in contact
-      </button>
-    </div>
-    <ul class="section-interaction links">
-      <li>
-        <a href="#">LinkedIn</a>
-      </li>
-      <li>
-        <a href="#">Twitter</a>
-      </li>
-      <li>
-        <a href="#">Github</a>
-      </li>
-    </ul>
-  </div>
+  </BackgroundImage>
 )
 
 export default IndexPage
