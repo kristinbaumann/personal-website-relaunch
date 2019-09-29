@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Personal Website of Kristin Baumann`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kristin Baumann - Personal Website `,
+    description: `Meaningful things on the web: Frontend Development, Product Management, Data Visualisation, UX Design.`,
+    author: `@kristin_baumann`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,17 +18,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Personal Website of Kristin Baumann`,
+        short_name: `Kristin Baumann`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0f0a0a`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `src/images/headshot_icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/headshot_icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
