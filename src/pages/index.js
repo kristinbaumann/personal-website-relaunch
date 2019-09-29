@@ -32,9 +32,9 @@ const IndexPage = () => (
         </div>
         <div className="section-cta">
           <p>Looking for help?</p>
-          <button className="cta" href="mailto:mail@kristin-baumann.com">
+          <a className="cta" href="mailto:mail@kristin-baumann.com">
             Get in contact
-          </button>
+          </a>
         </div>
       </div>
       <ul className="section-interaction links">

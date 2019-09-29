@@ -68,16 +68,19 @@ ul.topics {
   margin-bottom: 0.5rem;
 }
 
-.section-cta button {
+.section-cta a {
+  display: inline-block;
   font-weight: bold;
   background-color: #fff;
+  color: #333;
+  text-decoration: none;
   border-radius: 5px;
   transition: 0.2s;
   font-size: 1.25rem;
   padding: 1rem 2rem;
 }
 
-.section-cta button:hover {
+.section-cta a:hover {
   background-color: lightgrey;
   cursor: pointer;
 }
@@ -119,7 +122,6 @@ ul.links a:hover {
 }
 
 /* Scaling typography */
-
 @media screen and (min-width: 500px) {
   html {
     font-size: 14px;
