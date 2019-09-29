@@ -12,14 +12,9 @@ p {
   font-size: 1rem;
 }
 
-.gatsby-image-wrapper {
-  height: 100vh;
-  max-height: 100vh;
-}
-
 .container {
   height: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
