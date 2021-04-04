@@ -1,6 +1,6 @@
 import React from "react"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/layout.css"
 import "typeface-nunito"
@@ -11,7 +11,7 @@ import BackgroundImage from "../components/background-image"
 
 const IndexPage = () => (
   <>
-    <SEO />
+    <Seo />
     <BackgroundImage>
       <div className="container">
         <div className="container-top">

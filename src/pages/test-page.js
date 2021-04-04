@@ -3,39 +3,40 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 
-import { convertToBgImage } from "gbimage-bridge"
-import BackgroundImage from "gatsby-background-image"
+// import { convertToBgImage } from "gbimage-bridge"
+import { BgImage } from "gbimage-bridge"
+// import BackgroundImage from "gatsby-background-image"
 
-//import { GatsbyImage } from "gatsby-plugin-image"
-
-const BackgroundSection = () => {
+const TestPage = () => {
 
   const { backgroundImage123 } = useStaticQuery(
     graphql`
       query{
         backgroundImage123: file(relativePath: {eq: "bg-test-image.jpg"}) {
-          childrenImageSharp {
-            gatsbyImageData(
-              width: 2000, 
-              quality: 50, 
-              webpOptions: {quality: 70})
+            childrenImageSharp {
+              gatsbyImageData(
+                width: 2000
+                quality: 50
+                webpOptions: {quality: 70}
+              )
+            }
           }
-        }
       }
     `
   )
 
   const image = getImage(backgroundImage123)
-  const bgImage = convertToBgImage(image)
+//   const bgImage = convertToBgImage(image)
 
   return (
-    <BackgroundImage
-      Tag="section"
-      {...bgImage}
-      preserveStackingContext
-    >
-      Test
-    </BackgroundImage>
+    // <BackgroundImage
+    //   Tag="section"
+    //   {...bgImage}
+    //   preserveStackingContext
+    // >
+    //   <h1>Testing Page here</h1>
+    // </BackgroundImage>
+    <BgImage image={image} style={{ minWidth: 200, minHeight: 200 }}>Testing</BgImage>
   )
 
   // const { placeholderImage } = useStaticQuery(
@@ -69,5 +70,5 @@ const BackgroundSection = () => {
   // )
 }
 
-export default BackgroundSection
+export default TestPage
 
